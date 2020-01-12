@@ -1,0 +1,50 @@
+@import "../../styles/colors";
+
+.dropdown {
+  position: relative;
+  margin-bottom: 10px;
+  button {
+    width: 100%;
+    padding: 0;
+    margin-top: 5px;
+    height: 25px;
+  }
+  .show-list {
+    display: flex;
+  }
+
+  .label {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  ul {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background: white;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    display: none;
+    transition: all 0.4s ease;
+
+    button {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $app-color-blue;
+    }
+    button:hover {
+      background: $app-color-blue;
+      color: white;
+    }
+  }
+}

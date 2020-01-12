@@ -1,0 +1,56 @@
+@import "../../styles/colors";
+
+.form-container {
+  background: white;
+  color: $app-color-blue;
+  padding: 20px;
+
+  h2 {
+    text-align: center;
+  }
+  hr {
+    width: 90%;
+    border: 1px solid gray;
+  }
+}
+.label {
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.bold {
+  font-weight: bold;
+}
+
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  div {
+    width: 45%;
+  }
+}
+
+.checkbox-container {
+  margin-bottom: 10px;
+
+  .checkbox-label {
+    margin-right: 10px;
+    color: black;
+    input {
+      margin-right: 5px;
+    }
+  }
+}
+
+.submit-button {
+  border: 1px solid #ff4b00;
+  background: #ff4b00;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
