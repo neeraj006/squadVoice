@@ -29,14 +29,14 @@ export default class Form extends Component {
   submitForm = () => {
     alert(
       `name- ${this.nameInput.current.value}
-    email- ${this.emailInput.current.value}
-    phone- ${this.phoneInput.current.value}
-    leadsPerMonth- ${this.state.leadsPerMonth}
-    totalLeads- ${this.state.totalLeads}
-    crm- ${this.state.crm}
-    agents- ${this.state.agents}
-    sources-  ${this.zillowCheckbox.current.checked ? "zillow, " : ""} ${this.realtorCheckbox.current.checked ? "realtor, " : ""} ${this.ylopoCheckbox.current.checked ? "ylopo, " : ""}  ${this.othersCheckbox.current.checked ? "others, " : ""} 
-    hear about us- ${this.googleCheckbox.current.checked ? "google" : ""} ${this.facebookCheckbox.current.checked ? "facebook, " : ""} ${this.emailCheckbox.current.checked ? "email, " : ""} ${this.friendsCheckbox.current.checked ? "friends, " : ""} ${this.realClosersCheckbox.current.checked ? "real closers, " : ""} 
+       email- ${this.emailInput.current.value}
+       phone- ${this.phoneInput.current.value}
+       leadsPerMonth- ${this.state.leadsPerMonth}
+       totalLeads- ${this.state.totalLeads}
+       crm- ${this.state.crm}
+       agents- ${this.state.agents}
+       sources-  ${this.zillowCheckbox.current.checked ? "zillow, " : ""} ${this.realtorCheckbox.current.checked ? "realtor, " : ""} ${this.ylopoCheckbox.current.checked ? "ylopo, " : ""}  ${this.othersCheckbox.current.checked ? "others, " : ""} 
+       hear about us- ${this.googleCheckbox.current.checked ? "google" : ""} ${this.facebookCheckbox.current.checked ? "facebook, " : ""} ${this.emailCheckbox.current.checked ? "email, " : ""} ${this.friendsCheckbox.current.checked ? "friends, " : ""} ${this.realClosersCheckbox.current.checked ? "real closers, " : ""} 
     `
     );
   };

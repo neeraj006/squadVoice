@@ -16,12 +16,13 @@ export default class App extends Component {
     };
   }
 
+  //render upper row of average plans 
   renderAveragePlans = () => {
     return data.plans.map(plan => (
       <div
         className={`average-plan ${
           this.isPlanSelected(plan) ? "selected" : ""
-        }`}
+          }`}
         onClick={() => this.setState({ selectedPlan: plan })}
         key={plan.min}
       >
@@ -34,6 +35,7 @@ export default class App extends Component {
     return this.state.selectedPlan === plan ? true : false;
   };
 
+  //map  maximum value of a plan  to name of the plan
   mapPlanToPlanName = plan => {
     if (plan.max === "infinite") {
       return `$${plan.min}K+`;

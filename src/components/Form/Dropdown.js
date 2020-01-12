@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Dropdown.scss";
 
 export default function Dropdown({ list, label, getSelectedValue }) {
+
+  //create dropdown list items
   const mappedList = list.map(item => (
     <button
       key={item}
